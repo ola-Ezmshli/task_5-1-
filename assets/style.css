@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bold 14px Arial, sans-serif;
+}
+body {
+    height: 100%;
+    background: radial-gradient(circle, hsl(44, 75%, 81%) 20%, hsl(60, 20%, 99%));
+    background-size: cover;
+}
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(#cbc6e0, #d7d3e6);
+    border-radius: 20px;
+    box-shadow: 0px 4px #938cbb, 0px 10px 15px #0808089c;
+}
+.C-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.C-screen .screen {
+    height: 45px;
+    width: 75%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: inset 5px 7px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.C-screen span.C{
+    display: flex;
+       justify-content: center;
+       align-items: center;
+    width: 70px;
+       height: 70px;
+       border-radius: 50%;
+       user-select: none;
+       transition: all 0.5s ease;
+    background: rgb(250, 250, 147);
+       box-shadow: 0px 6px rgba(241, 241, 47, 0.795);;
+       color: #77803c;
+       font-size: 20px;
+   }
+.result {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 25px;
+   
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.buttons span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 70px;
+    height: 70px;
+    background: #fcdce5;
+    box-shadow: 0px 4px #bd8b9a;
+    border-radius: 50%;
+    color: #5c3f45;
+    user-select: none;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+.buttons .eval img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.buttons span.operator {
+    background: #FFF0F5;
+}
+
+.buttons span:hover {
+    background: #f595b0;
+    box-shadow: 0px 4px #b41d45;
+    color: white;
+}
+
+.buttons span.eval:hover {
+    box-shadow: 0px 4px #b41d45;
+        color: white;
+}
+
+.C-screen span.C:hover {
+    background: rgba(255, 255, 0, 0.582);
+    box-shadow: 0px 4px rgba(212, 212, 1, 0.671);
+    color: white;
+}
+.buttons span:active, .C-screen span.C:active, .buttons span.eval:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+ 
